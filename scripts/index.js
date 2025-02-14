@@ -5,7 +5,7 @@ const canvasC = document.getElementById('c');
 
 const config = {
   birthdate: 'Feb 14, 2025',
-  name: 'Rissa Meisella!'
+  name: 'Icakk✨!'
 };
 
 function hideEverything() {
@@ -46,28 +46,28 @@ x = setInterval(function() {
     h = (c.height = window.innerHeight),
     ctx = c.getContext('2d'),
     hw = w / 2, // half-width
-    hh = h / 2,
-    opts = {
+    hh = h / 2
+    const opts = {
       strings: ['HAPPY', 'BIRTHDAY!', config.name],
       charSize: 30,
       charSpacing: 35,
       lineHeight: 40,
-
+    
       cx: w / 2,
       cy: h / 2,
-
+    
       fireworkPrevPoints: 10,
       fireworkBaseLineWidth: 5,
       fireworkAddedLineWidth: 8,
-      fireworkSpawnTime: 200,
-      fireworkBaseReachTime: 30,
-      fireworkAddedReachTime: 30,
+      fireworkSpawnTime: 400, // Increased from 200
+      fireworkBaseReachTime: 60, // Increased from 30
+      fireworkAddedReachTime: 60, // Increased from 30
       fireworkCircleBaseSize: 20,
       fireworkCircleAddedSize: 10,
-      fireworkCircleBaseTime: 30,
-      fireworkCircleAddedTime: 30,
-      fireworkCircleFadeBaseTime: 10,
-      fireworkCircleFadeAddedTime: 5,
+      fireworkCircleBaseTime: 60, // Increased from 30
+      fireworkCircleAddedTime: 60, // Increased from 30
+      fireworkCircleFadeBaseTime: 20, // Increased from 10
+      fireworkCircleFadeAddedTime: 10, // Increased from 5
       fireworkBaseShards: 5,
       fireworkAddedShards: 5,
       fireworkShardPrevPoints: 3,
@@ -77,10 +77,10 @@ x = setInterval(function() {
       fireworkShardAddedSize: 3,
       gravity: 0.1,
       upFlow: -0.1,
-      letterContemplatingWaitTime: 360,
-      balloonSpawnTime: 20,
-      balloonBaseInflateTime: 10,
-      balloonAddedInflateTime: 10,
+      letterContemplatingWaitTime: 720, // Increased from 360
+      balloonSpawnTime: 40, // Increased from 20
+      balloonBaseInflateTime: 20, // Increased from 10
+      balloonAddedInflateTime: 20, // Increased from 10
       balloonBaseSize: 20,
       balloonAddedSize: 20,
       balloonBaseVel: 0.4,
