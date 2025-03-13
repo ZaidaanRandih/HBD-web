@@ -2,6 +2,7 @@ const count = document.getElementById('count');
 const head = document.getElementById('head');
 const giftbox = document.getElementById('merrywrap');
 const canvasC = document.getElementById('c');
+const birthdaySong = document.getElementById('birthdaySong'); // Get the audio element
 
 const config = {
   birthdate: 'Feb 14, 2025',
@@ -59,15 +60,15 @@ x = setInterval(function() {
       fireworkPrevPoints: 10,
       fireworkBaseLineWidth: 5,
       fireworkAddedLineWidth: 8,
-      fireworkSpawnTime: 400, // Increased from 200
-      fireworkBaseReachTime: 60, // Increased from 30
-      fireworkAddedReachTime: 60, // Increased from 30
+      fireworkSpawnTime: 300, // Increased from 200
+      fireworkBaseReachTime: 40, // Increased from 30
+      fireworkAddedReachTime: 40, // Increased from 30
       fireworkCircleBaseSize: 20,
       fireworkCircleAddedSize: 10,
-      fireworkCircleBaseTime: 60, // Increased from 30
-      fireworkCircleAddedTime: 60, // Increased from 30
-      fireworkCircleFadeBaseTime: 20, // Increased from 10
-      fireworkCircleFadeAddedTime: 10, // Increased from 5
+      fireworkCircleBaseTime: 40, // Increased from 30
+      fireworkCircleAddedTime: 40, // Increased from 30
+      fireworkCircleFadeBaseTime: 15, // Increased from 10
+      fireworkCircleFadeAddedTime: 7, // Increased from 5
       fireworkBaseShards: 5,
       fireworkAddedShards: 5,
       fireworkShardPrevPoints: 3,
@@ -77,8 +78,8 @@ x = setInterval(function() {
       fireworkShardAddedSize: 3,
       gravity: 0.1,
       upFlow: -0.1,
-      letterContemplatingWaitTime: 720, // Increased from 360
-      balloonSpawnTime: 40, // Increased from 20
+      letterContemplatingWaitTime: 400, // Increased from 360
+      balloonSpawnTime: 30, // Increased from 20
       balloonBaseInflateTime: 20, // Increased from 10
       balloonAddedInflateTime: 20, // Increased from 10
       balloonBaseSize: 20,
@@ -489,6 +490,7 @@ x = setInterval(function() {
     function showfireworks() {
       canvasC.style.display = 'initial';
       setTimeout(anim, 1500);
+      birthdaySong.play(); // Play the birthday song
     }
 
     init();
