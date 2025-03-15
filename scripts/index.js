@@ -5,7 +5,7 @@ const canvasC = document.getElementById('c');
 const birthdaySong = document.getElementById('birthdaySong'); // Get the audio element
 
 const config = {
-  birthdate: 'Feb 14, 2025',
+  birthdate: 'May 25, 2025',
   name: 'Icakk✨!'
 };
 
