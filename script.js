@@ -5,15 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const celebrateBtn = document.getElementById('celebrateBtn');
     const card = document.querySelector('.card');
     
-    // Set birthday to tomorrow
-    const tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate() + 1);
-    tomorrow.setHours(0, 0, 0, 0);
+    // Set birthday to May 25, 2025
+    const targetDate = new Date('2025-05-25T00:00:00');
     
     // Update countdown timer
     function updateCountdown() {
         const now = new Date();
-        const diff = tomorrow - now;
+        const diff = targetDate - now;
         
         if (diff <= 0) {
             // Birthday has arrived!
@@ -40,14 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
     updateCountdown();
     setInterval(updateCountdown, 1000);
     
-    // For demo purposes, add a way to skip the countdown
-    countdownContainer.addEventListener('click', function() {
-        countdownContainer.style.opacity = '0';
-        setTimeout(() => {
-            countdownContainer.style.display = 'none';
-            birthdayCard.style.display = 'block';
-        }, 1000);
-    });
+    // // For demo purposes, add a way to skip the countdown
+    // countdownContainer.addEventListener('click', function() {
+    //     countdownContainer.style.opacity = '0';
+    //     setTimeout(() => {
+    //         countdownContainer.style.display = 'none';
+    //         birthdayCard.style.display = 'block';
+    //     }, 1000);
+    // });
     
     // Create confetti colors
     const confettiColors = [
