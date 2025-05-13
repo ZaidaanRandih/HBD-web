@@ -38,14 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
     updateCountdown();
     setInterval(updateCountdown, 1000);
     
-    // // For demo purposes, add a way to skip the countdown
-    // countdownContainer.addEventListener('click', function() {
-    //     countdownContainer.style.opacity = '0';
-    //     setTimeout(() => {
-    //         countdownContainer.style.display = 'none';
-    //         birthdayCard.style.display = 'block';
-    //     }, 1000);
-    // });
+    // For demo purposes, add a way to skip the countdown
+    countdownContainer.addEventListener('click', function() {
+        countdownContainer.style.opacity = '0';
+        setTimeout(() => {
+            countdownContainer.style.display = 'none';
+            birthdayCard.style.display = 'block';
+        }, 1000);
+    });
     
     // Create confetti colors
     const confettiColors = [
